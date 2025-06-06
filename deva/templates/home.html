@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Event Calendar System</title>
+  <link href="/static/event.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f0f0f0;
+      text-align: center;
+      padding-top: 60px;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      background-color: #003366;
+      color: white;
+      padding: 40px 0;
+      margin-bottom: 40px;
+    }
+    .btn-group {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/image/2025-calendar-template-03.png" > College Calendar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="header">
+    <h1>College Event Calendar System</h1>
+    <p>Stay updated with all college events</p>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../templates/event.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../templates/eventdt.html">Event Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../templates/addevnt.html">Add Event</a>
+        </li>
+      </ul>
+    </div>
+</div>
+-- Page Content -->
+    <h2 class="mb-4">Add New Event</h2><br><br>
+    <div>
+
+    <form action="/templates/event.html" method="POST" class="event-form">
+        <label>Event Name:</label>
+        <input type="text" name="name" class="form-control mb-3" required>
+
+        <label>Description:</label>
+        <textarea name="description" class="form-control mb-3" required></textarea>
+
+        <label>Date:</label>
+        <input type="date" name="date" class="form-control mb-3" required>
+
+        <label>Time:</label>
+        <input type="text" name="time" class="form-control mb-3" placeholder="e.g., 2 PM - 4 PM" required>
+
+        <label>Venue:</label>
+        <input type="text" name="venue" class="form-control mb-3" required>
+
+        <label>Category:</label>
+        <input type="text" name="category" class="form-control mb-4" required>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+        <a href="/templates/eventdt.html" class="btn btn-secondary ms-2">← Back</a>
+    </form>
+</div>
+
+</body>
+</html>
