@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="/static/event.css">
+</head>
+<body>
+    <center>
+    <h1>College Events</h1>
+    <div class="event-container">
+        {% for event in events %}
+        <div class="event-card">
+                <p>{{ event[1] }} </p> 
+                <p>{{ event[2] }} </p>
+                <p>{{ event[3] }} </p>
+                <p>{{ event[4] }} </p>
+                <p>{{ event[5] }} </p>
+        
+            <a href="../templates/eventdt.html" class="btn">Event Details</a>
+             <a href="../templates/demo.html" class="btn"> ← Back to Home</a>
+            </div>
+        {% endfor %}
+    </div>
+    </center>
+</body>
+</html>
