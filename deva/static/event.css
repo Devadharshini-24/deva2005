@@ -1,26 +1,34 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f7f7f7;
+    background: #5eaae7;
     margin: 0;
-    padding: 20px;
+    padding-top: 60px;
+    text-align: center;
 }
 
-h1 {
+h1,h2 {
     text-align: center;
-    color: #333;
+    color: #fdf6ff;
+    
+}
+.header,.footer{
+    background-color: #004999;
+    color: azure;
+    padding: 40px;
+    margin-bottom: 5px;
 }
 
 a.btn, .btn {
     display: inline-block;
     background-color: #0066cc;
-    color: white;
+    color: rgb(235, 227, 227);
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
-.btn:hover, .btn-detail:hover {
+.btn:hover{
     background-color: #004999;
 }
 
@@ -32,7 +40,7 @@ a.btn, .btn {
 }
 
 .event-card {
-    background-color: white;
+    background-color: rgb(244, 247, 250);
     padding: 20px;
     border: 1px solid #ddd;
     width: 300px;
@@ -43,19 +51,19 @@ a.btn, .btn {
 .event-detail {
     max-width: 600px;
     margin: auto;
-    background: white;
+    background-color: rgb(223, 221, 230);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(50, 63, 175, 0.1);
 }
 
 .event-form {
     max-width: 500px;
     margin: auto;
-    background: white;
+    background: rgb(233, 234, 243);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(63, 92, 170, 0.1);
 }
 
 .event-form label {
@@ -79,4 +87,10 @@ a.btn, .btn {
     padding: 7px 12px;
     border-radius: 5px;
     text-decoration: none;
+}
+.btn-group{
+    margin-top: 30px;
+}
+body{
+    background-image: url('/image/event.jpg');
 }
